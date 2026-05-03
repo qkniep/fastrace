@@ -4,6 +4,12 @@ All significant changes to this project will be documented in this file.
 
 ## Unreleased
 
+## v0.17.0
+
+### Notable Changes
+
+* Upgraded MSRV to 1.85 and Edition to 2024.
+
 ### New Features
 
 * Added `OpenTelemetryReporter::with_block_on()` for exporters that require a runtime-specific
