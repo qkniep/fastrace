@@ -4,12 +4,12 @@
 [![Documentation](https://img.shields.io/docsrs/fastrace?style=flat-square&logo=rust)](https://docs.rs/fastrace/)
 [![MSRV 1.91.0](https://img.shields.io/badge/MSRV-1.91.0-green?style=flat-square&logo=rust)](https://www.whatrustisit.com)
 [![CI Status](https://img.shields.io/github/actions/workflow/status/fast/fastrace/ci.yml?style=flat-square&logo=github)](https://github.com/fast/fastrace/actions)
-[![License](https://img.shields.io/crates/l/fastrace?style=flat-square)](https://github.com/fast/fastrace/blob/main/LICENSE)
+[![License](https://img.shields.io/crates/l/fastrace?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 [![libs.tech recommends](https://libs.tech/project/829370199/badge.svg)](https://libs.tech/project/829370199/fastrace)
 
 Fastrace is a tracing library [100x faster](#benchmarks) than others:
 
-![benchmark](https://raw.githubusercontent.com/fast/fastrace/refs/heads/main/etc/img/head-benchmark.svg)
+![benchmark](https://raw.githubusercontent.com/fast/fastrace/refs/heads/main/benches/media/head-benchmark.svg)
 
 Features:
 
@@ -176,7 +176,7 @@ In this context, Fastrace offers a more efficient solution by filtering out enti
 
 **By different architectures:**
 
-![Benchmark result by architecture](https://raw.githubusercontent.com/fast/fastrace/refs/heads/main/etc/img/benchmark-arch.svg)
+![Benchmark result by architecture](https://raw.githubusercontent.com/fast/fastrace/refs/heads/main/benches/media/benchmark-arch.svg)
 
 |                     | x86-64 (Intel Broadwell) | x86-64 (Intel Skylake) | x86-64 (AMD Zen) | ARM (AWS Graviton2) |
 |---------------------|--------------------------|------------------------|------------------|---------------------|
@@ -186,7 +186,7 @@ In this context, Fastrace offers a more efficient solution by filtering out enti
 
 **By creating a different number of spans:**
 
-![Benchmark result by number of spans](https://raw.githubusercontent.com/fast/fastrace/refs/heads/main/etc/img/benchmark-spans.svg)
+![Benchmark result by number of spans](https://raw.githubusercontent.com/fast/fastrace/refs/heads/main/benches/media/benchmark-spans.svg)
 
 |                     | 1 span     | 10 spans   | 100 spans   | 1000 spans  |
 |---------------------|------------|------------|-------------|-------------|
@@ -194,7 +194,7 @@ In this context, Fastrace offers a more efficient solution by filtering out enti
 | rustracing          | 13x slower | 26x slower | 45x slower  | 55x slower  |
 | fastrace (baseline) | 1x (0.4us) | 1x (0.8us) | 1x (3.4us)  | 1x (27.8us) |
 
-Detailed results are available in [etc/benchmark-result](https://github.com/fast/fastrace/tree/main/etc/benchmark-result).
+Detailed results are available in [benches/results](https://github.com/fast/fastrace/tree/main/benches/results).
 
 ## License
 
